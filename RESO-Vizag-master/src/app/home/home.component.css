@@ -1,0 +1,363 @@
+
+
+.form-pa {
+    padding: 50px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+select.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+
+.col-md-12, .col-md-6, .col-md-4, .col-md-8, .col-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.form-container .btn {
+    margin: 0 auto!important;
+    display: block;
+    background-color: rgb(70,81,160);
+    color: #ffffff;
+    text-transform: uppercase!important;
+    padding: 0px 40px;
+    margin-top: 10px!important;
+    font-weight: 600;
+    height: 40px;
+    line-height: 34px;
+    border-radius: 8px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.form-pa {
+    padding: 50px;
+}
+
+.form-sec .content-right {
+    text-align: right;
+    border-right: 1px solid gray;
+}
+
+.form-sec h5 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.form-sec p {
+    font-size: 34px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.spam p {
+    font-style: italic;
+    font-size: 12px!important;
+    color: #000000;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.difference-pa {
+    padding: 0px 50px 50px 50px;
+}
+
+.makes-difference h6 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #7044A3;
+}
+
+.makes-difference p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.content-coloums {
+    margin: 10px 0px 10px 0px;
+}
+
+.content-bg {
+    background-color: #283F9A;
+    color: #ffffff;
+    padding: 10px 0px 10px 20px;
+    height: 100px;
+}
+
+.content-bg1 {
+    background-color: #B8D548;
+    color: #000000;
+    padding: 10px 0px 10px 20px;
+    height: 100px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.makes-difference .heading {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.makes-difference p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.differ-content{
+    margin: 20px 0px !important;
+}
+
+.address-sec {
+    background-color: #F8691B;
+    color: #000000;
+    padding: 40px 0px 10px 20px;
+    height: 380px;
+    margin: 0px 200px 0px 200px;
+}
+
+.address-pa {
+    padding: 10px 10px 10px 30px;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:70%;
+    position:relative;
+    height:0;
+    box-shadow: 5px 5px 10px grey;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    border-radius: 6px;
+}
+
+.academic-sec {
+    background-size: cover;
+    background-position: center;
+}
+
+.academic-pa {
+    padding: 200px;
+}
+
+.academic-sec .academic-content {
+    float: right !important;
+    margin-left: auto!important;
+}
+
+.academic-content h5 {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.academic-content h6 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+.academic-content h3 {
+    font-size: 37px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.academic-content p {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.academic-sec .academic-pa a button {
+    background-color: #F8691B;
+    color: #000000;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #007b5e !important;
+    padding: 60px 0;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a, 
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+.box {
+    padding: 30px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+
+.box img {
+    opacity: 1;
+    transition: .3s;
+    border-radius: 50%;
+}
+.box img:hover {
+    opacity: 0.6;
+}
+
+.box span {
+    display: block;
+}
+
+
+
+/* .box img{
+    display: flex;
+    vertical-align: middle;
+}
+
+.box span {
+    justify-content: center;
+}
+
+ */
+
+@media (max-width: 768px) {
+
+    .form-pa{
+        padding: 30px;
+    }
+
+    .form-sec h5{
+        font-size: 32px;
+    }
+    .form-sec p{
+        font-size: 21px;
+    }
+    .form-sec .content-right{
+        text-align: center;
+        border-right: none!important;
+    }
+    .difference-pa{
+        padding: 30px;
+    }
+
+    .col-md-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .col-md-8 {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+
+    .content-coloums{
+        margin: 8px 0px 0px 0px;
+    }
+
+    .makes-difference .content-bg{
+        padding: 10px 5px 10px 20px;
+        height: 120px;
+    }
+    .makes-difference .content-bg1{
+        padding: 10px 5px 10px 20px;
+        height: 120px;
+    }
+
+    .banner-pa{
+        padding: 30px;
+    }
+
+    #testimonials iframe {
+        width: 100%;
+        height: 303px;
+    }
+}

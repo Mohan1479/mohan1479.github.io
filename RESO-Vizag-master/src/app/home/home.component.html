@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Resonance Kota, the Best Coaching Institute, is now in Vizag! Enroll for IIT/JEE coaching at your nearest location. It's a 2-year JEE (Main+Advanced) long-term course to crack IIT/JEE.">
+  
+    <title> IIT JEE Mains & Advanced Coaching - Resonance Vizag</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
+  
+  <body>
+    <!-- Image Slider Section
+      Automatic and manual Image slide with interval of 3.5 secs
+      Used "ngb-carousel" for automatic sliding provided by @Ng-bootstrap 
+      * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+      To use @ng-bootstrap install in -cli with command "npm install @ng-bootstrap/ng-bootstrap" 
+      Import NgbModule in the app.module.ts file to acces NgbModule globally 
+      * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+
+
+      <!-- Yet to do ----: Possible animations when sliding images -->
+      <section>    
+        <div class="banner-pa">
+          <ngb-carousel class = "carousel">  
+              <ng-template ngbSlide>
+                  <img src="assets/Slide-1.jpg" alt="Slide-1" style="width: 100%; height:   600px;">
+              </ng-template>  
+              <ng-template ngbSlide>  
+                  <img src="assets/Slide-2.jpg" alt="Slide-2" style="width: 100%; height: 600px;"> 
+              </ng-template>  
+          </ngb-carousel>  
+        </div>
+  </section>
+  
+  
+  <section>
+      <div class="multi-options">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xs-12 col-sm-4 col-md-4 box">
+                      <a href="https://www.resonance.ac.in/" target="_blank" class="navbar-brand">
+                      <img class="img" src="assets/students.png" alt="image" width="300" height="300"> </a>
+                      <span style="">Academics</span>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-md-4 box">
+                      <a href="https://www.resonance.ac.in/" target="_blank" class="navbar-brand">
+                      <img class="img" src="assets/students.png" alt="image" width="300" height="300"> </a>
+                      <span style="">Hostel / Dining</span>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-md-4 box">
+                      <a href="https://www.resonance.ac.in/" target="_blank" class="navbar-brand">
+                      <img class="img" src="assets/students.png" alt="image" width="300" height="300"> </a>
+                      <span style="">Faculty</span>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-md-4 box">
+                      <a href="https://www.resonance.ac.in/" target="_blank" class="navbar-brand">
+                      <img class="img" src="assets/students.png" alt="image" width="300" height="300"> </a>
+                      <span style="">Security</span>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-md-4 box">
+                      <a href="https://www.resonance.ac.in/" target="_blank" class="navbar-brand">
+                      <img class="img" src="assets/students.png" alt="image" width="300" height="300"> </a>
+                      <span style="">Gallery</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <!-- Form Section -->
+  
+  <section class="form-sec" style=" background-position: center; background-size: cover; background-image: url(assets/new-bg.jpg);">
+      <div class="container form-pa">
+          <div class="row">
+              <div class="col-md-6 content-right">
+                 <!-- <h5 style="color: tomato;">ResoFAST <br>Program<br> Qualifier<br> Exam</h5>
+                 <p style="color: #fff;"> Up to 90% <br>Scholarships</p> -->
+              </div>
+  
+              <div class="col-md-6">
+                  <div class="form-container">
+                      <form [formGroup]="enquireForm" (ngSubmit)="onSubmit()">
+                          <div class="form-group col-md-12">
+                              <input
+                                  type="text"
+                                  id="name"
+                                  formControlName="name"
+                                  placeholder="Name*"
+                                  class="form-control">
+                              <span *ngIf="enquireForm.get('name').touched && !enquireForm.get('name').valid" style="color: darkslategrey;">Please enter name.</span>
+                          </div>
+                          <div class="form-group col-md-12">
+                              <input
+                                  type="text"
+                                  id="parentname"
+                                  formControlName="parentname"
+                                  placeholder="Parent's Name*"
+                                  class="form-control">
+                              <span *ngIf="enquireForm.get('parentname').touched && !enquireForm.get('parentname').valid" style="color: darkslategrey;">Please enter Parent's Name.</span>
+                          </div>
+  
+                          <!-- Yet to implement ::: Default placeholder ""--Branch--"" to appear -->
+                          <div class="form-group col-md-12 input-group ">
+                              <select class="custom-select" id="branch" formControlName="branch">
+                                  <option value="" selected="--Branch--">--Branch--</option>
+                                  <option value="AkkayaPalem">AkkayaPalem</option>
+                              </select>
+                              <span *ngIf="!enquireForm.get('branch').valid && enquireForm.get('branch').touched" style="color: darkslategrey;">Please enter branch.</span>
+                          </div>
+  
+                          <!-- Yet to implement ::: Default placeholder ""--Course--"" to appear -->
+                          <div class="form-group col-md-12 input-group ">
+                              <select class="custom-select " id="course" formControlName="course">
+                                  <option value="" selected="--Course--">--Course--</option>
+                                  <option value="JEE">JEE</option>
+                                  <option value="NEET">NEET</option>
+      
+                              </select>
+                              <span *ngIf="!enquireForm.get('course').valid && enquireForm.get('course').touched" style="color: darkslategrey;">Please enter course.</span>
+                          </div>
+                          <div class="form-group col-md-12">
+                              <input 
+                                  type="text" 
+                                  class="form-control"
+                                  formControlName="phoneno" 
+                                  id="phoneno" 
+                                  placeholder="Phone No.*" 
+                                  maxlength="10">
+                                  <span *ngIf="!enquireForm.get('phoneno').valid && enquireForm.get('phoneno').touched" style="color: darkslategrey;">Please enter valid phone number.</span>
+                          </div>
+                          <div class="form-group col-md-12">
+                              <input 
+                                  type="email" 
+                                  class="form-control"
+                                  formControlName="email" 
+                                  id="email" 
+                                  placeholder="Email ID*">
+                                  <span *ngIf="!enquireForm.get('email').valid && enquireForm.get('email').touched" style="color: darkslategrey;">Please enter valid email ID.</span>
+                          </div>
+                          <div class="form-group col-md-12">
+                              <input 
+                                  type="text" 
+                                  class="form-control" 
+                                  id="time" 
+                                  placeholder="Preferred time for a call">
+                          </div>
+                          <div class="col-md-12 spam">
+                              <button type="submit" 
+                                  class="btn btn-primary" 
+                                  id="submit"
+                                  [disabled]="!enquireForm.valid">ENQUIRE NOW</button>
+                              <p class="text-center">We hate SPAM and promise to keep your details safe.</p>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div>
+          <hr>
+        </div>
+  </section>
+  
+  <section class="makes-difference" id="why-resonance">
+      <div class="container difference-pa">
+          <div class="differ-content">
+              <h6>Resonance makes the difference!</h6>
+              <p>Established in 2001 by Mr. R.K. Verma, B.Tech, Electrical and Electronics from IIT Madras, Resonance Kota has today become a household name in North India
+                  for its consistent results and excellent IIT/JEE/NEET training. Resonance is now one of the top 10 institutes in India for training in
+                  competitive examination with 84 centres spread in over 50 cities.</p>
+              <p>The Reso Way – is a doctrine of twelve commandments of teaching methodology we follow for our Classroom Contact Program.
+                  This is based on the principle of providing unique and customised tools, training and techniques to students based on the
+                  experience of the faculty.</p>
+          </div>
+          <div class="row">
+              <div class="col-md-6 content-columns">
+                  <div class="content-bg">
+                      <p class="heading">Academic Team (Faculty)</p>
+                      <p>Experienced faculty from Kota on rotation to instill educational excellence</p>
+                  </div>
+              </div>
+              <div class="col-md-6 content-columns">
+                  <div class="content-bg">
+                      <p class="heading">Academic Research and Development</p>
+                      <p> Consistent and enriched classroom experience</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 content-columns">
+                  <div class="content-bg1">
+                      <p class="heading">Regular Classes </p>
+                      <p>Experienced faculty from Kota on rotation to instill educational excellence</p>
+                  </div>
+              </div>
+              <div class="col-md-6 content-columns">
+                  <div class="content-bg1">
+                      <p class="heading">Academic Administration and Management</p>
+                      <p>Authority to maintain academic discipline</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 content-columns">
+                  <div class="content-bg">
+                      <p class="heading">Daily practice problems </p>
+                      <p>Improvement every day is the only way to beat competition</p>
+                  </div>
+              </div>
+              <div class="col-md-6 content-columns">
+                  <div class="content-bg">
+                      <p class="heading">Online Test Practise</p>
+                      <p>In-house online practice laboratory</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 content-columns">
+                  <div class="content-bg1">
+                      <p class="heading">Practice Booklets</p>
+                      <p>Easy notes and insights in a well-written form for daily understanding</p>
+                  </div>
+              </div>
+              <div class="col-md-6 content-columns">
+                  <div class="content-bg1">
+                      <p class="heading">Co-academic Arrangements</p>
+                      <p>Activities to inculcate a stress-free environment</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 content-columns">
+                  <div class="content-bg">
+                      <p class="heading">Doubt Classes</p>
+                      <p>Open forum dedicated to address queries</p>
+                  </div>
+              </div>
+              <div class="col-md-6 content-columns">
+                  <div class="content-bg">
+                      <p class="heading">Concept Building Classes</p>
+                      <p>JEE/NEET requires students to not just memorize but understand and visualize the fundaments of the topic</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 content-columns">
+                  <div class="content-bg1">
+                      <p class="heading">Periodic Assessment Tests (PATs)</p>
+                      <p>To map the student’s progress stringently</p>
+                  </div>
+              </div>
+              <div class="col-md-6 content-columns">
+                  <div class="content-bg1">
+                      <p class="heading">Clinic Classes</p>
+                      <p>Special classes for those lagging behind and have missed classes to get them back on track</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  
+  <!-- *********** In every section we either added a background image or background color. It looks we there no synchronization between sections *********-->
+  <!-- ********** TO DO (when everything done) ******** -->
+  <!--            1. Alignment between sections -->
+  
+  <!-- Address section of the branch -->
+  
+  <!--TO DO -->
+  <!-- 1. make this section more attractive by changing the fonts and colors or adjusting the size of the image in this section -->
+  <!-- 2. Good to add clickable google location by adding a location symbol adjacent to the Address. Makes it easy to navigate to the branch -->
+  
+  <section class="address-sec" id="our-branches">
+      <div class="container address-pa">
+      <div class="row">
+          <div class="col-md-6">
+              <div>
+                  <h1>Resonance Vizag Center(ICCP)</h1>
+              </div>
+              <h5><i>  Our Facilities</i></h5>
+              <ul>
+                  <li>A/C Class Rooms</li>
+                  <li>Separate Boarding for Boys & Girls</li>
+                  <li>Transport Facility for Day Scholars</li>
+              </ul>
+              <div>
+                  <h5><i>Address</i></h5>
+                  <p>Plot No. 1234, Road No. 56, Gandhi Nagar, Visakhapatnam.</p>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <!-- <img src="https://resonancehyderabad.com/images/resonance.png"> -->
+              <div class="map-responsive">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.185878425335!2d83.3021292141925!3d17.73587879733031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a394331d694ad4d%3A0xca85f732a84638ee!2sResonance%20IIT%20and%20NEET%20College!5e0!3m2!1sen!2sin!4v1594615813538!5m2!1sen!2sin" width="500" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+          </div>
+      </div>
+     </div>
+  </section>
+  
+  
+  <!-- Testimonial section -->
+  
+  <!-- TO DO -->
+  <!-- 1. Need to add a background image or color for this section -->
+  <!-- 2. Update the YouTube video frames after getting from the client -->
+  <!-- -->
+  <section id="testimonials">
+      <div class="container">
+          <h5 style="padding:30px 0px 0px 0px;font-size: 30px;font-weight: 600;">Straight from the Resonites</h5>
+          <div class="row" style="padding:30px 0px;">
+              <div class="col-md-6"><iframe width="100%" height="303px" src="https://www.youtube.com/embed/70oFSjgzUuc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+              <div class="col-md-6"><iframe width="100%" height="303px" src="https://www.youtube.com/embed/YltMEcUufK0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          </div>
+      </div>
+  </section>
+  
+  <!-- Academic Section -->
+  
+  <!-- TO DO --> 
+  <!-- 1. Change the background image and optional font styles -->
+  
+  <section id="footer">
+      <div class="container">
+          <div class="row text-center text-xs-center text-sm-left text-md-left">
+              <div class="col-xs-12 col-sm-3 col-md-3">
+                  <h5>Menu</h5>
+                  <ul class="list-unstyled quick-links">
+                      <li><a href="https://www.resonance.ac.in"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                      <li><a href="https://www.resonance.ac.in"><i class="fa fa-angle-double-right"></i>Live Classes</a></li>
+                      <li><a href="https://www.resonance.ac.in"><i class="fa fa-angle-double-right"></i>Recorded Classes</a></li>
+                      <li><a href="https://www.resonance.ac.in"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+                  </ul>
+              </div>
+              <div class="col-xs-12 col-sm-3 col-md-3">
+                  <h5>Courses</h5>
+                  <ul class="list-unstyled quick-links">
+                      <li><a href="https://www.resonance.ac.in"><i class="fa fa-angle-double-right"></i>Foundation</a></li>
+                      <li><a href="https://www.resonance.ac.in"><i class="fa fa-angle-double-right"></i>IIT Coaching</a></li>
+                      <li><a href="https://www.resonance.ac.in"><i class="fa fa-angle-double-right"></i>NEET Coaching</a></li>
+                      <li><a href="https://www.resonance.ac.in"><i class="fa fa-angle-double-right"></i>Long Term Coaching</a></li>
+                  </ul>
+              </div>
+              <div class="col-xs-12 col-sm-3 col-md-3">
+                  <h5>Topics</h5>
+                  <ul class="list-unstyled quick-links">
+                      <li><a href="https://www.resonance.ac.in"><i class="fa fa-angle-double-right"></i>Hostel & Boarding</a></li>
+                      <li><a href="https://www.resonance.ac.in"><i class="fa fa-angle-double-right"></i>Library & Study Materials</a></li>
+                      <li><a href="https://www.resonance.ac.in"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                  </ul>
+              </div>
+              <div class="col-xs-12 col-sm-3 col-md-3">
+                  <h5>Info</h5>
+                  <ul class="list-unstyled quick-links">
+                      <li><a href="https://www.resonance.ac.in"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+                      <li><a href="https://www.resonance.ac.in"><i class="fa fa-angle-double-right"></i>Feedback</a></li>
+                      <li><a href="https://www.resonance.ac.in"><i class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                  <ul class="list-unstyled list-inline social text-center">
+                      <li class="list-inline-item"><a href="https://www.resonance.ac.in"><i class="fa fa-facebook"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.resonance.ac.in"><i class="fa fa-twitter"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.resonance.ac.in"><i class="fa fa-instagram"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.resonance.ac.in"><i class="fa fa-google-plus"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.resonance.ac.in" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                  </ul>
+              </div>
+              <hr>
+          </div>	
+          <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                  <p><u><a href="https://www.resonance.ac.in/">Resonance Educational Institutes</a></u> is a Registered</p>
+                  <p class="h6">© All right Reversed.<a class="text-green ml-2" href="https://www.resonance.ac.in" target="_blank">Resonance Vizag</a></p>
+              </div>
+              <hr>
+          </div>	
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

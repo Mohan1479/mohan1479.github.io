@@ -1,0 +1,40 @@
+
+<section class="form-sec" style=" background-position: center; background-size: cover; background-image: linear-gradient(35deg, #bcfa2a, #2af3fa);">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2" >
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm)">
+                <div formGroupName="loginData">
+                    <div class="form-group">
+                        <label for="email" >Email</label>
+                        <input
+                        type="text"
+                        id="email"
+                        class="form-control"
+                        formControlName="email">
+                    </div>
+                    <span
+                        *ngIf="!loginForm.get('loginData.email').valid && loginForm.get('loginData.email').touched"
+                        class="help-block">Please enter valid Email
+                    </span> 
+                    <hr style="border-width: 2px; color: dimgray;">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input
+                        type="password"
+                        id="password"
+                        class="form-control"
+                        formControlName="password">
+                        <span
+                            *ngIf="!loginForm.get('loginData.password').valid && loginForm.get('loginData.password').touched"
+                            class="help-block">Please enter password
+                        </span>
+                    </div>
+                </div>
+                <!-- [disabled]=!loginForm.valid -->
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+</section>
